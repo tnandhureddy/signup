@@ -1,0 +1,256 @@
+/* ==========================================
+   EMPLOYER REGISTRATION PAGE
+========================================== */
+
+.registration-bg{
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container img{
+    margin-top: 0;
+}
+
+/* Main Glass Card */
+
+.login-page{
+    background:rgba(255,255,255,.40) !important;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:25px !important;
+
+    padding: 50px !important;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,.25);
+
+    width:100%;
+
+    position:relative;
+
+    z-index:10;
+
+    animation:fadeInUp .8s ease;
+
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Form Title */
+
+.login-page h4{
+    font-size:32px;
+    font-weight:700;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:30px;
+
+    text-shadow:0 2px 15px rgba(0,0,0,.3);
+}
+
+/* Form Group */
+
+.form-group{
+    margin-bottom:10px;
+}
+
+/* Labels */
+
+.form-group label{
+    display:block;
+    font-size:14px;
+    font-weight:600;
+    color:#ffffff;
+    margin-bottom:6px;
+}
+
+/* Inputs */
+
+.form-control{
+    height:42px;          /* reduced from 52px */
+    padding:6px 12px;     /* reduced padding */
+    font-size:14px;
+
+    background:rgba(255,255,255, 0.40) !important;
+    border:1px solid rgba(255,255,255,.25);
+    color:#ffffff !important;
+    border-radius:10px;
+
+    transition:.3s;
+}
+
+/* Placeholder */
+
+.form-control::placeholder{
+    color:rgba(255,255,255,.75);
+}
+
+/* Focus Effect */
+
+.form-control:focus{
+    background:rgba(255,255,255,.20) !important;
+
+    border-color:#66b3ff;
+
+    box-shadow:
+    0 0 0 .2rem rgba(102,179,255,.25);
+
+    color:#ffffff;
+}
+
+/* Select */
+
+select.form-control{
+    cursor:pointer;
+    appearance:auto;
+}
+
+/* Dropdown Option Colors */
+
+select.form-control option{
+    color:#333;
+    background:#fff;
+}
+
+/* Textarea */
+
+textarea.form-control{
+    min-height:120px;
+    resize:vertical;
+}
+
+/* Button */
+
+.btn-primary{
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    border:none;
+
+    height:54px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(79,70,229,.35);
+}
+
+/* Checkbox */
+
+.custom-control-label{
+    color:#ffffff;
+    font-size:14px;
+}
+
+/* Links */
+
+a{
+    color:#ffffff;
+}
+
+a:hover{
+    color:#dbeafe;
+}
+
+/* Container */
+
+.home-center{
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:60px 0;
+}
+
+.home-desc-center{
+    width:100%;
+}
+
+/* Animation */
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#4f46e5;
+    border-radius:10px;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .login-page{
+        padding:30px !important;
+    }
+}
+
+@media(max-width:768px){
+
+    .col-lg-6,
+    .col-md-6{
+        width:100%;
+    }
+}
+
+@media(max-width:576px){
+
+    .login-page{
+        padding:20px !important;
+    }
+
+    .login-page h4{
+        font-size:22px;
+    }
+}
